@@ -1,7 +1,7 @@
-# AGENTS.md — SudoSodokuApp.github.io (site: https://sudosodoku.kaichen.dev)
+# AGENTS.md — sudosudoku.github.io (site: https://sudosudoku.kaichen.dev)
 
-Marketing site for **SudoSodoku**, a terminal-fantasy sudoku for iPhone
-(<https://github.com/SudoSodokuApp/SudoSodoku>). Served by Vercel at the
+Marketing site for **sudo sudoku**, a terminal-fantasy sudoku for iPhone
+(<https://github.com/sudosudoku/sudo-sudoku>). Served by Vercel at the
 canonical domain (GitHub Pages mirror still exists), no build step.
 Extensionless links require `cleanUrls` in vercel.json — don't remove it. The design follows Apple's design principles: minimal,
 content-first, paper-fast, plain HTML.
@@ -63,4 +63,4 @@ mirror the app repo; keep them in sync with it rather than diverging.
 2. Check light + dark scheme, 375px + 1280px widths.
 3. No horizontal scroll, no console errors, no external requests.
 4. Links resolve (App Store link:
-   <https://apps.apple.com/us/app/sudosodoku/id6779813086>).
+   <https://apps.apple.com/us/app/sudo-sudoku/id6779813086>).

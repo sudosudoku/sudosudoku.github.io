@@ -7,7 +7,8 @@ The joke is always played straight — the site never winks at the reader.
 
 Use these exactly; do not paraphrase:
 
-- Name: `SudoSodoku` (one word, camel-case S's; never "Sudo Sodoku")
+- Name: `sudo sudoku` (all lowercase, two words, even at the start of a
+  sentence). Terminal commands: `sudo sudoku …`
 - Slogan (full lockup): **`sudo solve` — logic is root access.**
 - Slogan (standalone): **Logic is root access.**
 - Retired slogan — remove on sight, never reintroduce:
@@ -48,6 +49,6 @@ Use these exactly; do not paraphrase:
 - 2026-07-11: app submitted to Apple for review — button said
   "Submitted for App Store review".
 - 2026-07-16: approved and live — button says "Download on the App Store"
-  and links to <https://apps.apple.com/us/app/sudosodoku/id6779813086>.
+  and links to <https://apps.apple.com/us/app/sudo-sudoku/id6779813086>.
 
 Footer credits link Kai T. Chen to <https://kaichen.dev>.

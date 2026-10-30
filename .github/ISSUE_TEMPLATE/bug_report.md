@@ -10,12 +10,12 @@ assignees: ''
 
 A clear description of what's wrong on the site.
 
-> ℹ️ Bugs in the **SudoSodoku app itself** belong in the
-> [app repository](https://github.com/SudoSodokuApp/SudoSodoku/issues) instead.
+> ℹ️ Bugs in the **sudo sudoku app itself** belong in the
+> [app repository](https://github.com/sudosudoku/sudo-sudoku/issues) instead.
 
 ## 📄 Page
 
-Which page? (e.g. https://sudosodokuapp.github.io/ or /privacy)
+Which page? (e.g. https://sudosudoku.github.io/ or /privacy)
 
 ## 🔁 Steps to Reproduce
 

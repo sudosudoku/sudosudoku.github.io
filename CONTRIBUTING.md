@@ -1,9 +1,9 @@
-# Contributing to SudoSodokuApp.github.io
+# Contributing to sudosudoku.github.io
 
-Thanks for helping improve the SudoSodoku website! This repo is the
+Thanks for helping improve the sudo sudoku website! This repo is the
 marketing site only — for the app itself, head to
-[SudoSodokuApp/SudoSodoku](https://github.com/SudoSodokuApp/SudoSodoku)
-and its own [CONTRIBUTING.md](https://github.com/SudoSodokuApp/SudoSodoku/blob/main/CONTRIBUTING.md).
+[sudosudoku/sudo-sudoku](https://github.com/sudosudoku/sudo-sudoku)
+and its own [CONTRIBUTING.md](https://github.com/sudosudoku/sudo-sudoku/blob/main/CONTRIBUTING.md).
 
 ## What we welcome
 
@@ -28,8 +28,8 @@ and its own [CONTRIBUTING.md](https://github.com/SudoSodokuApp/SudoSodoku/blob/m
 ## Getting started
 
 ```sh
-git clone https://github.com/SudoSodokuApp/SudoSodokuApp.github.io.git
-cd SudoSodokuApp.github.io
+git clone https://github.com/sudosudoku/sudosudoku.github.io.git
+cd sudosudoku.github.io
 python3 -m http.server 8080   # then open http://localhost:8080
 ```
 

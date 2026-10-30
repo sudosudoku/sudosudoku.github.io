@@ -10,8 +10,8 @@ assignees: ''
 
 What should change on the site, and why?
 
-> ℹ️ Feature requests for the **SudoSodoku app itself** belong in the
-> [app repository](https://github.com/SudoSodokuApp/SudoSodoku/issues) instead.
+> ℹ️ Feature requests for the **sudo sudoku app itself** belong in the
+> [app repository](https://github.com/sudosudoku/sudo-sudoku/issues) instead.
 
 ## 📐 Fit
 

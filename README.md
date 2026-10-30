@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="img/appicon/appicon-256.png" srcset="img/appicon/appicon-512.png 2x" width="128" height="128" alt="SudoSodoku logo">
+  <img src="img/appicon/appicon-256.png" srcset="img/appicon/appicon-512.png 2x" width="128" height="128" alt="sudo sudoku logo">
 </p>
 
-# SudoSodokuApp.github.io
+# sudosudoku.github.io
 
-Marketing site for [SudoSodoku](https://github.com/SudoSodokuApp/SudoSodoku) —
+Marketing site for [sudo sudoku](https://github.com/sudosudoku/sudo-sudoku) —
 `sudo solve`, logic is root access. A terminal-fantasy sudoku for iPhone;
 v2.0.0 App Store submission in progress.
 
@@ -33,15 +33,15 @@ That's it. There is nothing to install and nothing to build.
 | `docs/CONTENT.md` | Copy guidelines and canonical strings |
 | `AGENTS.md` | Working agreement for AI agents (CLAUDE.md imports it) |
 | `CONTRIBUTING.md` | How to contribute (what's welcome, verify checklist) |
-| `LICENSE` | MIT, same as [the app](https://github.com/SudoSodokuApp/SudoSodoku) |
+| `LICENSE` | MIT, same as [the app](https://github.com/sudosudoku/sudo-sudoku) |
 | `.github/` | Issue/PR templates, security policy, Proof HTML CI |
 
 ## Deploying
 
 Push to `main`. Vercel serves the repo root at
-<https://sudosodoku.kaichen.dev> (canonical). `vercel.json` enables
+<https://sudosudoku.kaichen.dev> (canonical). `vercel.json` enables
 `cleanUrls` so extensionless links like `/privacy` resolve. GitHub Pages
-still mirrors the site at <https://sudosodokuapp.github.io>.
+still mirrors the site at <https://sudosudoku.github.io>.
 
 ## Before launch
 
