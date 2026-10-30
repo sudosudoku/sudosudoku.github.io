@@ -2,6 +2,12 @@
 	"cleanUrls": true,
 	"redirects": [
 		{
+			"source": "/",
+			"has": [{ "type": "host", "value": "sudosodoku.kaichen.dev" }],
+			"destination": "https://sudosudoku.kaichen.dev/",
+			"permanent": true
+		},
+		{
 			"source": "/:path*",
 			"has": [{ "type": "host", "value": "sudosodoku.kaichen.dev" }],
 			"destination": "https://sudosudoku.kaichen.dev/:path*",
