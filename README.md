@@ -47,5 +47,5 @@ still mirrors the site at <https://sudosudoku.github.io>.
 ## Before launch
 
 - [x] Replace the `TODO(app-store-url)` placeholder once the App Store page is live
-- [x] Screenshots section (7 shots, 640px JPEGs in `img/screenshots/`,
-      resized from Kai's 1320×2708 originals)
+- [x] Screenshots section (8 shots, 640px JPEGs in `img/screenshots/`,
+      resized from Kai's 921×2000 originals)
