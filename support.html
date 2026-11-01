@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+
+	<title>Support — sudo sudoku</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="sudo sudoku support: contact the developer, quick help for common questions, data and privacy, and how to report a bug."/>
+
+	<link rel="canonical" href="https://sudosudoku.kaichen.dev/support"/>
+	<link rel="icon" href="favicon.png" type="image/png"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<style>
+		article {
+			max-width: 40rem;
+			margin-inline: auto;
+			padding: 2rem 1.25rem 4rem;
+		}
+		article h1 {
+			font-size: 1.8rem;
+			margin-block-end: 0.5rem;
+		}
+		article .updated {
+			font-size: 0.85rem;
+			color: var(--tertiary-text);
+			margin-block-end: 2rem;
+		}
+		article h2 {
+			font-size: 1.15rem;
+			text-align: start;
+			margin-block: 2rem 0.5rem;
+		}
+		article h3 {
+			margin-block: 1.5rem 0.35rem;
+		}
+		article p, article li {
+			color: var(--secondary-text);
+		}
+		article :is(p, ul, ol) + :is(p, ul, ol) {
+			margin-block-start: 0.75rem;
+		}
+		article ul, article ol {
+			padding-inline-start: 1.25rem;
+		}
+		.terminal-quote {
+			margin-block: 1.75rem;
+			border-radius: 12px;
+			overflow: hidden;
+			background: var(--terminal-bg);
+			border: 1px solid light-dark(hsla(216, 33%, 7%, .15), hsla(0, 0%, 100%, .12));
+			box-shadow: 0 14px 34px light-dark(hsla(216, 33%, 20%, .2), hsla(0, 0%, 0%, .55));
+		}
+		.terminal-quote .titlebar {
+			display: flex;
+			gap: 7px;
+			padding: 10px 14px;
+			border-block-end: 1px solid hsla(0, 0%, 100%, .07);
+		}
+		.terminal-quote .titlebar i {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+		.terminal-quote .titlebar i:nth-child(1) { background: #FF5F57; }
+		.terminal-quote .titlebar i:nth-child(2) { background: #FEBC2E; }
+		.terminal-quote .titlebar i:nth-child(3) { background: #28C840; }
+		.terminal-quote .screen {
+			padding: 1rem 1.25rem 1.3rem;
+			font-family: var(--mono);
+			font-size: 0.85rem;
+			line-height: 1.75;
+			color: var(--terminal-green);
+			text-shadow: 0 0 6px hsla(142, 70%, 55%, .25);
+		}
+		.terminal-quote .screen p {
+			color: inherit;
+		}
+		.terminal-quote .prompt {
+			opacity: .65;
+		}
+		.terminal-quote .cmd {
+			white-space: nowrap;
+		}
+		.terminal-quote dl {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			gap: 0.35rem 1.5rem;
+			margin-block-start: 0.6rem;
+		}
+		.terminal-quote dt {
+			opacity: .65;
+		}
+		.terminal-quote dd {
+			overflow-wrap: anywhere;
+		}
+		.terminal-quote a {
+			color: inherit;
+			font-weight: 700;
+			text-decoration: underline;
+			text-underline-offset: 0.2em;
+		}
+		.terminal-quote a:hover {
+			color: white;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<header>
+	<nav><ul>
+		<li><a href="./">Home</a></li>
+		<li><a href="privacy">Privacy</a></li>
+		<li><a href="https://github.com/sudosudoku/sudo-sudoku" rel="external">GitHub</a></li>
+	</ul></nav>
+</header>
+
+
+<main>
+	<article>
+		<h1>Support</h1>
+		<p class="updated">For sudo sudoku 2.0 on iPhone, iOS 17 or later</p>
+
+		<section aria-labelledby="contact">
+			<h2 id="contact">Contact</h2>
+			<div class="terminal-quote">
+				<div class="titlebar" aria-hidden="true"><i></i><i></i><i></i></div>
+				<div class="screen">
+					<p><span class="prompt">root@ios:~$</span> <span class="cmd">sudo sudoku --contact</span></p>
+					<dl>
+						<dt>mail</dt>
+						<dd><a href="mailto:kai@kaichen.dev">kai@kaichen.dev</a></dd>
+						<dt>ask</dt>
+						<dd><a href="https://github.com/sudosudoku/sudo-sudoku/discussions/categories/q-a" rel="external">GitHub Discussions Q&amp;A</a></dd>
+						<dt>bugs</dt>
+						<dd><a href="https://github.com/sudosudoku/sudo-sudoku/issues/new/choose" rel="external">Report a bug</a></dd>
+					</dl>
+				</div>
+			</div>
+			<p>For questions, search or open a thread in GitHub Discussions Q&amp;A.
+			Include your sudo sudoku version, iOS version, and iPhone model when
+			they are relevant.</p>
+		</section>
+
+		<h2>Quick help</h2>
+
+		<h3>My puzzle or timer disappeared</h3>
+		<p>An active puzzle is saved locally as you play. Relaunch the app and
+		open <code>archives</code> to resume it. The play clock counts active
+		time only and pauses while the app is in the background.</p>
+
+		<h3>Game Center is not showing my profile</h3>
+		<p>sudo sudoku works without Game Center. For leaderboards and
+		achievements:</p>
+		<ol>
+			<li>Open <strong>Settings&nbsp;→&nbsp;Game&nbsp;Center</strong> on your iPhone.</li>
+			<li>Confirm that you are signed in.</li>
+			<li>Return to sudo sudoku and open <code>whoami</code>.</li>
+		</ol>
+		<p>Score and achievement delivery may wait until the device is online.
+		If Apple's Game Center service is unavailable, your local game and
+		rating still work.</p>
+
+		<h3>My leaderboard time did not improve</h3>
+		<p>Game Center retains the best eligible time for each difficulty. Only
+		completed, independently played puzzles submit a time. Viewing a saved
+		solution does not submit a score.</p>
+
+		<h3>I found a conflicting number</h3>
+		<p>A conflict means the same digit appears twice in a row, column, or
+		3×3 box. sudo sudoku has no lives or fail state: clear the value or use
+		undo and continue.</p>
+
+		<h3>I need less motion</h3>
+		<p>Enable <strong>Settings&nbsp;→ Accessibility&nbsp;→ Motion&nbsp;→
+		Reduce&nbsp;Motion</strong>. sudo sudoku provides an immediate or
+		simplified path for its animations. The puzzle remains fully playable
+		without motion or haptics.</p>
+
+		<h2>Data and privacy</h2>
+		<p>Gameplay data stays on your device. There is no sudo sudoku account,
+		analytics, advertising, tracking, or developer-operated cloud service.
+		Game Center is optional and operated by Apple.</p>
+		<ul>
+			<li>Read the <a href="privacy">Privacy Policy</a>.</li>
+			<li>To remove local gameplay data, delete the app. This cannot be undone.</li>
+			<li>Deleting the app does not delete Game Center leaderboard scores or
+			achievements; Apple manages that data through Game Center.</li>
+		</ul>
+		<p>Never post personal information, Apple Account details, or private
+		Game Center information in a public issue or discussion.</p>
+
+		<h2>Report a bug</h2>
+		<p>Use the
+		<a href="https://github.com/sudosudoku/sudo-sudoku/issues/new/choose" rel="external">bug report form</a>
+		for a reproducible problem. Please include:</p>
+		<ul>
+			<li>what you expected and what happened;</li>
+			<li>clear reproduction steps;</li>
+			<li>app version, iOS version, and iPhone model;</li>
+			<li>a screenshot or screen recording when useful, with personal
+			information removed.</li>
+		</ul>
+		<p>Security vulnerabilities must not be posted publicly. Follow the
+		private reporting process in
+		<a href="https://github.com/sudosudoku/sudo-sudoku/blob/main/.github/SECURITY.md" rel="external">SECURITY.md</a>.</p>
+	</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 <a href="https://kaichen.dev" rel="external">Kai T. Chen</a>&ensp;·&ensp;<a href="https://github.com/sudosudoku/sudo-sudoku/blob/main/LICENSE" rel="external">MIT License</a>&ensp;·&ensp;<a href="privacy">Privacy</a>&ensp;·&ensp;<a href="support">Support</a></p>
+</footer>
+</body>
+</html>

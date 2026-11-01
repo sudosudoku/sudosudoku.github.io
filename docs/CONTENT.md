@@ -41,7 +41,7 @@ Use these exactly; do not paraphrase:
 - Free and open source: MIT License. No third-party dependencies (pure
   Apple frameworks), so there is nothing to credit beyond the license
   itself. Footer format, with the name linking to <https://kaichen.dev>:
-  `© 2026 Kai T. Chen · MIT License · Privacy`.
+  `© 2026 Kai T. Chen · MIT License · Privacy · Support`.
 
 ## Status
 
