@@ -27,6 +27,7 @@ That's it. There is nothing to install and nothing to build.
 | --- | --- |
 | `index.html` | Landing page |
 | `privacy.html` | Privacy policy (App Store requirement) |
+| `support.html` | Support page (content from app repo SUPPORT.md) |
 | `css/main.css` | All styles |
 | `img/` | App icon renditions and future screenshots |
 | `docs/DESIGN.md` | Design language spec |
