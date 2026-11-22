@@ -6,9 +6,10 @@
 
 Marketing site for [sudo sudoku](https://github.com/sudosudoku/sudo-sudoku) —
 `sudo solve`, logic is root access. A terminal-fantasy sudoku for iPhone;
-v2.0.0 App Store submission in progress.
+v2.0.1 is [on the App Store](https://apps.apple.com/us/app/sudo-sudoku/id6779813086)
+([release notes](https://github.com/sudosudoku/sudo-sudoku/releases/tag/v2.0.1)).
 
-Plain HTML + CSS, no build step, served by GitHub Pages. Design language:
+Plain HTML + CSS, no build step, served by Vercel. Design language:
 Apple's design principles — minimal, content-first — carrying the app's
 phosphor-green terminal identity.
 

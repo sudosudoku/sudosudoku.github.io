@@ -20,7 +20,8 @@ Use these exactly; do not paraphrase:
 - Prompt: `root@ios:~$`
 - Rank ladder: `SCRIPT_KIDDIE → USER → SUDOER → SYS_ADMIN → KERNEL_HACKER → THE_ARCHITECT`
 - Difficulty flags: `--easy` `--medium` `--hard` `--master`
-- Platform line: iPhone · iOS 17.0+ · v2.0.0 · Free
+- Platform line: iPhone · iOS 17.0+ · v2.0.1 · Free (version links to the
+  GitHub release notes)
 
 ## Product facts (keep the site honest)
 

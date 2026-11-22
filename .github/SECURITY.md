@@ -1,8 +1,9 @@
 # Security Policy
 
 This repository contains the static marketing site for sudo sudoku
-(<https://sudosudoku.github.io>). It is plain HTML/CSS served by GitHub
-Pages: no server code, no user accounts, no data collection.
+(<https://sudosudoku.kaichen.dev>, mirrored at <https://sudosudoku.github.io>).
+It is plain HTML/CSS served by Vercel: no server code, no user accounts, no
+data collection.
 
 For vulnerabilities in the **sudo sudoku iOS app**, please use the app
 repository's [security policy](https://github.com/sudosudoku/sudo-sudoku/security/policy)
