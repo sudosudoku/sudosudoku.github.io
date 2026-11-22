@@ -17,6 +17,9 @@ Use these exactly; do not paraphrase:
   fantasy — with ELO ranks, Game Center leaderboards, and
   mechanical-keyboard haptics. No ads. No lives. No candy.
 - Victory line: `ACCESS GRANTED`
+- Monetization promise (permanent public commitment, decided 2026-11-21):
+  **No ads. No paid features. Not now, not later.** An optional tip jar
+  would stay compatible; ads, paid unlocks and subscriptions never are.
 - Prompt: `root@ios:~$`
 - Rank ladder: `SCRIPT_KIDDIE → USER → SUDOER → SYS_ADMIN → KERNEL_HACKER → THE_ARCHITECT`
 - Difficulty flags: `--easy` `--medium` `--hard` `--master`
@@ -36,6 +39,11 @@ Use these exactly; do not paraphrase:
   section, in that order.
 - Privacy: quote the app repo's PRIVACY.md — don't paraphrase loosely.
   privacy.html is a summary that links to it as the canonical text.
+- manifesto.html shows the app's full `import` list as proof of "no
+  third-party SDKs". Re-run `grep -rh '^import' SudoSudoku | sort -u` in
+  the app repo whenever its dependencies change, and keep the page in sync.
+  The "typical app" diff lines describe the category; never name a
+  competitor.
 - Never promise iPad/macOS. Never mention win rates or "losing". Never
   present undo as a penalty or quality metric.
 - v1 was released on GitHub only; v2.0.0 is the App Store debut.

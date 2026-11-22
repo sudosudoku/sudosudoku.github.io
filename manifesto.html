@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8"/>
+
+	<title>Manifesto — sudo sudoku</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="A sudoku for iPhone with no ads, no in-app purchases, no subscriptions and no tracking. Open source, so you can check."/>
+
+	<meta property="og:type"        content="article"/>
+	<meta property="og:url"         content="https://sudosudoku.kaichen.dev/manifesto"/>
+	<meta property="og:title"       content="Sudoku shouldn't come with a sales pitch."/>
+	<meta property="og:description" content="No ads. No paid features. Not now, not later. sudo sudoku is free, private and open source."/>
+	<meta property="og:image"       content="https://sudosudoku.kaichen.dev/img/appicon/appicon-512.png"/>
+	<meta property="og:locale"      content="en_US"/>
+	<meta property="twitter:card"   content="summary"/>
+
+	<link rel="canonical" href="https://sudosudoku.kaichen.dev/manifesto"/>
+	<link rel="icon" href="favicon.png" type="image/png"/>
+	<link rel="apple-touch-icon" href="img/appicon/appicon-256.png"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<style>
+		article {
+			max-width: 40rem;
+			margin-inline: auto;
+			padding: 2rem 1.25rem 4rem;
+		}
+		article > header {
+			text-align: center;
+			padding-block: 1.5rem 1rem;
+		}
+		article > header .prompt-line {
+			font-family: var(--mono);
+			font-size: 0.85rem;
+			color: var(--accent);
+		}
+		article h1 {
+			font-size: 2.1rem;
+			line-height: 1.2;
+			letter-spacing: -0.02em;
+			margin-block: 0.75rem 1rem;
+		}
+		article > header p.intro {
+			font-size: 1.1rem;
+			color: var(--secondary-text);
+		}
+		article .actions {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: 0.75rem 1.5rem;
+			margin-block-start: 1.75rem;
+		}
+		article h2 {
+			font-size: 1.45rem;
+			text-align: start;
+			margin-block: 3.5rem 1rem;
+		}
+		article h3 {
+			margin-block: 1.5rem 0.35rem;
+		}
+		article p, article li {
+			color: var(--secondary-text);
+		}
+		article :is(p, ul) + :is(p, ul) {
+			margin-block-start: 0.75rem;
+		}
+		article ul {
+			padding-inline-start: 1.25rem;
+		}
+		article li + li {
+			margin-block-start: 0.5rem;
+		}
+		article :is(p, li) code {
+			white-space: nowrap;
+		}
+		article li strong, article h3 {
+			color: var(--text);
+		}
+
+		/* terminal panels: always dark, the product showing through */
+		.terminal {
+			margin-block: 1.5rem;
+			border-radius: 12px;
+			overflow: hidden;
+			background: var(--terminal-bg);
+			border: 1px solid light-dark(hsla(216, 33%, 7%, .15), hsla(0, 0%, 100%, .12));
+			box-shadow: 0 14px 34px light-dark(hsla(216, 33%, 20%, .2), hsla(0, 0%, 0%, .55));
+		}
+		.terminal .titlebar {
+			display: flex;
+			gap: 7px;
+			padding: 10px 14px;
+			border-block-end: 1px solid hsla(0, 0%, 100%, .07);
+		}
+		.terminal .titlebar i {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+		.terminal .titlebar i:nth-child(1) { background: #FF5F57; }
+		.terminal .titlebar i:nth-child(2) { background: #FEBC2E; }
+		.terminal .titlebar i:nth-child(3) { background: #28C840; }
+		.terminal pre {
+			padding: 1rem 1.25rem 1.2rem;
+			overflow-x: auto;
+			font-family: var(--mono);
+			font-size: 0.8rem;
+			line-height: 1.75;
+			color: var(--terminal-green);
+			text-shadow: 0 0 6px hsla(142, 70%, 55%, .25);
+		}
+		.terminal .dim {
+			opacity: .6;
+		}
+		.terminal .del {
+			color: #FF7B72;
+			text-shadow: none;
+		}
+		@media (max-width: 480px) {
+			.terminal pre {
+				padding: 0.9rem 1rem;
+				font-size: 0.66rem;
+			}
+		}
+
+		.zeros {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+			gap: 1rem;
+			list-style: none;
+			padding: 0;
+		}
+		article .zeros li {
+			margin: 0;
+			padding: 1.2rem 1.4rem;
+			background: var(--card-background);
+			border-radius: 14px;
+		}
+		.zeros strong {
+			display: block;
+			font-family: var(--mono);
+			font-size: 1.15rem;
+			color: var(--accent);
+			margin-block-end: 0.25rem;
+		}
+
+		.promise {
+			margin-block: 2.5rem 0;
+			padding-block: 1.5rem;
+			border-block: 1px solid var(--separator);
+			text-align: center;
+		}
+		article .promise p {
+			font-size: 1.35rem;
+			font-weight: 600;
+			line-height: 1.35;
+			color: var(--text);
+		}
+
+		.closing {
+			text-align: center;
+		}
+		.closing .terminal {
+			text-align: start;
+		}
+		article .closing h2 {
+			text-align: center;
+			margin-block-start: 2rem;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<header>
+	<nav><ul>
+		<li><a href="./">Home</a></li>
+		<li><a href="privacy">Privacy</a></li>
+		<li><a href="support">Support</a></li>
+		<li><a href="https://github.com/sudosudoku/sudo-sudoku" rel="external">GitHub</a></li>
+	</ul></nav>
+</header>
+
+
+<main>
+	<article>
+		<header>
+			<p class="prompt-line" aria-hidden="true">root@ios:~$ cat /manifesto</p>
+			<h1>Sudoku shouldn't come with a sales pitch.</h1>
+			<p class="intro">It's nine rows, nine columns and a pencil. Somehow most
+			sudoku apps turned that into video ads, weekly subscriptions and
+			"out of lives" screens. We built the other kind.</p>
+
+			<div class="actions">
+				<a class="app-store" href="https://apps.apple.com/us/app/sudo-sudoku/id6779813086" rel="external">
+					<svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854c.023-.065-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282"/></svg>
+					<span><small>Download on the</small><strong>App&nbsp;Store</strong></span>
+				</a>
+				<a href="https://github.com/sudosudoku/sudo-sudoku" rel="external">Read the source</a>
+			</div>
+		</header>
+
+		<h2>You know the routine.</h2>
+		<div class="terminal">
+			<div class="titlebar" aria-hidden="true"><i></i><i></i><i></i></div>
+			<pre><code><span class="dim">root@ios:~$</span> diff typical_sudoku_app sudo_sudoku
+<span class="del">- 30-second video ad after every puzzle
+- banner ad stuck under the grid
+- "Go PREMIUM — $4.99/week" on first launch
+- "Out of lives. Watch an ad to continue?"
+- hints locked behind coins
+- sign up to save your progress</span>
++ no ads
++ no in-app purchases
++ no subscriptions
++ no lives, no fail states
++ no account
++ no tracking</code></pre>
+		</div>
+
+		<h2>What you get is the whole game.</h2>
+		<ul class="zeros">
+			<li><strong>0 ads</strong> Not banners, not videos, not "rewarded" ones.</li>
+			<li><strong>0 purchases</strong> Every difficulty and every feature, unlocked from the first launch.</li>
+			<li><strong>0 accounts</strong> Open it and play. Game Center is optional.</li>
+			<li><strong>0 trackers</strong> No analytics, no third-party SDKs. Your games stay on your iPhone.</li>
+		</ul>
+
+		<div class="promise">
+			<p>No ads. No paid features.<br/>Not now, not later.</p>
+		</div>
+
+		<h2>So what's the catch?</h2>
+		<p>Fair question. When something is free, you're usually the product.
+		Here's why that isn't true here.</p>
+
+		<h3>There's nothing to pay for.</h3>
+		<p>sudo sudoku runs entirely on your iPhone. Puzzles are generated on
+		device, your history lives in one local file, and the app works with no
+		connection at all. We run no servers, so there's no bill for ads to
+		cover.</p>
+
+		<h3>There's nothing being sold.</h3>
+		<p>The App Store privacy label is <em>Data Not Collected</em>. There is
+		no analytics SDK, no ad network and no account system, so there is
+		nothing that could collect your data even if we wanted it to. The
+		<a href="privacy">privacy policy</a> has the details.</p>
+
+		<h3>You don't have to take our word for it.</h3>
+		<p>The full source code is public under the
+		<a href="https://github.com/sudosudoku/sudo-sudoku/blob/main/LICENSE" rel="external">MIT License</a>.
+		Read it, build it, search it for an ad SDK. You won't find one.</p>
+
+		<h2>Trust, but <code>grep</code>.</h2>
+		<p>Clone the <a href="https://github.com/sudosudoku/sudo-sudoku" rel="external">repository</a>
+		and list everything the app imports:</p>
+		<div class="terminal">
+			<div class="titlebar" aria-hidden="true"><i></i><i></i><i></i></div>
+			<pre><code><span class="dim">root@ios:~/sudo-sudoku$</span> grep -rh '^import' SudoSudoku | sort -u
+import Combine
+import CoreHaptics
+import Foundation
+import GameKit
+import SwiftUI
+import UIKit
+<span class="dim">root@ios:~/sudo-sudoku$</span> # six Apple frameworks. that's all of it.</code></pre>
+		</div>
+		<p>No ad SDKs, no analytics, no payment frameworks, no third-party
+		packages. GameKit powers the optional Game Center leaderboards.
+		Everything else is the game.</p>
+
+		<h2>Free isn't the feature. The game is.</h2>
+		<p>We didn't strip out the ads to make up for a thin product. Here's
+		what's left when nothing is trying to sell you something:</p>
+		<ul>
+			<li><strong>Infinite puzzles, generated on device.</strong> Every grid
+			has exactly one solution, so you never have to guess. Nothing comes
+			from a canned database.</li>
+			<li><strong>Four difficulties</strong>, from <code>--easy</code> to
+			<code>--master</code>, each scored 0–100 by a logical solver.</li>
+			<li><strong>A real ELO ladder</strong>, from <code>SCRIPT_KIDDIE</code>
+			to <code>THE_ARCHITECT</code>, with Game Center leaderboards and
+			eleven achievements.</li>
+			<li><strong>No pressure mechanics.</strong> No lives, no fail state.
+			Undo is never punished, and the timer is optional.</li>
+			<li><strong>A full terminal fantasy.</strong> Every puzzle generates
+			behind a live breach log, and every win ends in
+			<code>ACCESS GRANTED</code>.</li>
+			<li><strong>Respectful by default.</strong> Every animation respects
+			Reduce Motion, and sound is never forced on.</li>
+		</ul>
+
+		<section class="closing" aria-labelledby="closing-title">
+			<div class="terminal">
+				<div class="titlebar" aria-hidden="true"><i></i><i></i><i></i></div>
+				<pre><code><span class="dim">root@ios:~$</span> sudo sudoku breach
+&gt; ads ................. [NONE]
+&gt; paywalls ............ [NONE]
+&gt; trackers ............ [NONE]
+&gt; ACCESS GRANTED</code></pre>
+			</div>
+			<h2 id="closing-title">Just sudoku. The way it should have been.</h2>
+			<p>No ads. No paid features. Not now, not later.</p>
+			<div class="actions">
+				<a class="app-store" href="https://apps.apple.com/us/app/sudo-sudoku/id6779813086" rel="external">
+					<svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854c.023-.065-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282"/></svg>
+					<span><small>Download on the</small><strong>App&nbsp;Store</strong></span>
+				</a>
+				<a href="https://github.com/sudosudoku/sudo-sudoku" rel="external">Star it on GitHub</a>
+			</div>
+		</section>
+	</article>
+</main>
+
+
+<footer>
+	<p class="copyright">© 2026 <a href="https://kaichen.dev" rel="external">Kai Chen</a>&ensp;·&ensp;<a href="https://github.com/sudosudoku/sudo-sudoku/blob/main/LICENSE" rel="external">MIT License</a>&ensp;·&ensp;<a href="privacy">Privacy</a>&ensp;·&ensp;<a href="support">Support</a></p>
+</footer>
+</body>
+</html>

@@ -48,6 +48,7 @@ Derived from [karpathy-guidelines](https://github.com/multica-ai/andrej-karpathy
 index.html        Landing page
 privacy.html      Privacy policy (App Store requirement)
 support.html      Support page (content from app repo SUPPORT.md)
+manifesto.html    No-ads manifesto: the free-forever promise and how to verify it
 css/main.css      All styles, one file
 img/appicon/      App icon renditions (source: app repo AppIcon_V3.png)
 docs/DESIGN.md    Design language spec — read before any visual change
